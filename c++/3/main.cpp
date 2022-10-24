@@ -234,6 +234,41 @@ cout << " you are not male or tall";
   // cout << getday (6);
 
   // while loops
+  /* int index = 1;
+   while (index <= 5){
+        cout << index << endl;
+   index++;*/
 
+   // guessing game
+/*int num = 2;
+int guess;
+int guessCount = 0;
+int guesslim = 5;
+bool outofGuesses = false;
+ while (num != guess && ! outofGuesses){
+        if (guessCount < guesslim){
+        cout << "enter guess:";
+ cin >> guess;
+ guessCount++;
+
+ } else {
+ outofGuesses = true;
+ }
+ }
+ if (outofGuesses){
+
+    cout << "you  lose";
+ } else {
+
+ cout << " you win";
+ }*/
+
+ // for loop
+ int index = 1;
+   while (index <= 5){
+        cout << index << endl;
+   index++;
+   }
+   for (){}
     return 0;
 }
