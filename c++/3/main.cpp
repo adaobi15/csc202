@@ -102,6 +102,35 @@ default:
 }
 return dayname;
 }*/
+
+// exponent function
+
+/*int power ( int basenum, int pownum){
+int result = 1;
+for (int i =0; i < pownum; i++) {
+    result = result * basenum;
+}
+return result;
+}*/
+
+//class and objects
+/*class Book {
+public:
+    string title;
+    string author;
+    int pages;
+
+};*/
+class Book {
+public:
+    string title;
+    string author;
+    int pages;
+    Book (){
+    cout << "creating object" <<endl;
+
+    }
+};
 int main()
 
 {
@@ -264,11 +293,92 @@ bool outofGuesses = false;
  }*/
 
  // for loop
- int index = 1;
+/* int index = 1;
    while (index <= 5){
         cout << index << endl;
    index++;
    }
-   for (){}
+   for ( int i = 1; index <= 5; i++){
+    cout << index << endl;
+   }*/
+
+  /* int nums[] = {1,2,3,7,8};
+   for (int i =0 ; i < 5; i++){
+    cout << nums[i] << endl;
+   }*/
+
+   //exponent function
+//cout << power (2,3);
+
+/*int numberGrid [3][2] = {
+                        {1,2},
+
+                        {3,4},
+                        {5,6},
+};
+             cout << numberGrid [2][1];*/
+
+/*int numberGrid [3][2] = {
+                        {1,2},
+
+                        {3,4},
+                        {5,6},
+};
+ for (int i = 0; i < 3; i++){
+    for (int j = 0; j < 2; j++){
+        cout << numberGrid [i][j];
+    }
+    cout << endl;
+ }*/
+
+ /*int age = 19;
+ double gpa = 2.7;
+ string name = "mike";*/
+
+ /*cout << "Age:" << &age << endl;
+ cout << "Gpa:" << &gpa << endl;
+ cout << "Name:" << &name << endl;*/
+
+ /*int age = 19;
+ int *pAge = &age;
+ double gpa = 2.7;
+ double *pGpa = &gpa;
+ string name = "mike";
+ string *pName = &name;
+
+// cout << pAge;
+ // dereferencing the pointer
+ cout << *pAge;*/
+ // classes and objects
+ /*string name = "mike";
+ double pi = 3.14;
+ char fav = 'g';*/
+
+ //book
+  /*Book book1;
+  book1.title = "harry p";
+  book1.author = "jk";
+  book1.pages = 500;
+
+  Book book2;
+  book2.title = "ltr";
+  book2.author = "jl";
+  book2.pages = 40;
+
+  cout << book2.pages;*/
+
+  // constructors
+  Book book1;
+  book1.title = "harry p";
+  book1.author = "jk";
+  book1.pages = 500;
+
+  Book book2;
+  book2.title = "ltr";
+  book2.author = "jl";
+  book2.pages = 40;
+
+  cout << book2.pages;
+
     return 0;
 }
