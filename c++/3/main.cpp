@@ -121,16 +121,91 @@ public:
     int pages;
 
 };*/
-class Book {
+/*class Book {
 public:
     string title;
     string author;
     int pages;
-    Book (){
-    cout << "creating object" <<endl;
+    Book (string aTitle, string aauthor , int  pagess){
+    title = aTitle;
+    author = aauthor;
+     pages = pagess;
+    }
+};*/
 
+// object functions
+
+/*class student {
+  public:
+      string name;
+      string major;
+      double gpa;
+      student (string Name, string Major , double Gpa){
+
+          name = Name;
+          major = Major;
+          gpa = Gpa;
+
+      }
+
+      bool hasHonours (){
+      if (gpa >= 3.5){
+        return true;
+      }
+      return false;
+      }
+
+};*/
+
+/*class movie {
+private :
+    string rating;
+  public:
+      string title;
+      string direction;
+
+      movie(string Title, string Direction , string Rating){
+
+          title = Title;
+          direction = Direction;
+          setRating(Rating);
+
+      }
+      void setRating (string Rating) {
+          if (Rating == "G" || Rating == "PG" || Rating == "R" || Rating == "NR" ){
+      rating = Rating;
+
+      } else {
+          rating = "NR";
+      }
+}
+string getRating (){
+return rating;
+ }
+
+};*/
+// inheritance
+
+class chef{
+
+public:
+    void makechicken(){
+    cout <<" the chef cooks" << endl;
+    }
+    void makesalad(){
+    cout <<" the chef rice" << endl;
+    }
+    void makefries(){
+    cout <<" the chef fries" << endl;
     }
 };
+
+ class Italianchef: public chef {
+public:
+    void makepasta () {
+    cout << "the chef makes pasta" << endl;
+    }
+  };
 int main()
 
 {
@@ -368,7 +443,7 @@ bool outofGuesses = false;
   cout << book2.pages;*/
 
   // constructors
-  Book book1;
+  /*Book book1;
   book1.title = "harry p";
   book1.author = "jk";
   book1.pages = 500;
@@ -378,7 +453,32 @@ bool outofGuesses = false;
   book2.author = "jl";
   book2.pages = 40;
 
-  cout << book2.pages;
+  cout << book2.pages;*/
+
+  /*Book book1 ("harry", "klm", 500);
+  Book book2 ("lfg", "kl", 700);
+
+  cout << book1.title;*/
+
+
+  // object functions
+  /*student student1 ("jim", "business", 2.5);
+  student student2 ("fallon", "dynasty", 4.3);
+
+  cout << student1.hasHonours();*/
+
+  // getters and setters
+/*  movie girls ("the girls trip","joss", "pg-18");
+ girls.setRating("dogs");
+  cout << girls.getRating();*/
+
+  // inheritance
+
+  chef chef;
+  chef.makechicken();
+
+  Italianchef  italianchef;
+  italianchef.makepasta();
 
     return 0;
 }
